@@ -16,8 +16,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
-
-        DB::statement("SET lc_time_names = 'es_ES'");
     }
 
     /**
@@ -27,6 +25,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        
+
     }
 }
