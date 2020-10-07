@@ -47,6 +47,8 @@ class PostsController extends Controller
 
         $post->update($request->all());
 
+        $post->generateUrl();
+
         $post->syncTags($request->get('tags'));
 
         return redirect()
